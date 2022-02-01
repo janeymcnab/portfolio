@@ -5,25 +5,20 @@ import Portfolio from './components/Portfolio';
 import ErrorPage from './components/ErrorPage';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import JumpToMenu from './components/JumpToMenu';
 var ReactRotatingText = require('react-rotating-text');
 
 function App() {
   return (
-    <Router>
       <>
-      <>
+        <JumpToMenu />
         <p>Hi I'm</p>
         <ReactRotatingText items={['Jane', 'Janey']} />
-        </>
-        <NavBar />
-        <Routes>
-        <Route exact path="/about" element= {<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route element={ErrorPage}/>
-        </Routes>
+        <AboutMe name="About Me"/>
+        <Portfolio />
+        <Contact />
       </>
-    </Router>
-  );
+  )
+
 }
 export default App;
