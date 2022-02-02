@@ -8,7 +8,8 @@ const JumpToMenu = () =>{
 
             <ul className="jump-menu">
                 <li className="list-item"><Link activeClass="active" to="About Me" spy={true} smooth={true}>About Me</Link></li>
-                <li className="list-item"><Link to="Portfolio" to spy={true} smooth={true}>Portfolio</Link></li>
+                <li className="list-item"><Link activeClass="active" to="Portfolio" spy={true} smooth={true}>Portfolio</Link></li>
+                <li className="list-item"><Link activeClass="active" to="Contact" spy={true} smooth={true}>Contact</Link></li>
             </ul>
 
         </div>

@@ -14,9 +14,9 @@ function App() {
         <JumpToMenu />
         <p>Hi I'm</p>
         <ReactRotatingText items={['Jane', 'Janey']} />
-        <AboutMe name="About Me"/>
-        <Portfolio />
-        <Contact />
+        <AboutMe title="About Me"/>
+        <Portfolio title="Portfolio"/>
+        <Contact title="Contact"/>
       </>
   )
 
